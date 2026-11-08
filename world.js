@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const lookupBtn = document.getElementById('lookup');
+    const citiesBtn = document.getElementById('lookup-cities');
     const input = document.querySelector('input');
     const result = document.getElementById('result');
 
@@ -13,4 +14,5 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     lookupBtn.addEventListener('click', () => search());
+    citiesBtn.addEventListener('click', () => search('&lookup=cities'));
 });
